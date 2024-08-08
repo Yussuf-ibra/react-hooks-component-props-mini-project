@@ -1,19 +1,19 @@
 import React from "react";
 import blogData from "../data/blog";
-import Header from "../components/Header";
-import About from "../components/About";
-import ArticleList from "../components/ArticleList";
+import Article from "./Article";
+import Header from "./Header";
+import About from "./About";
 
 console.log(blogData);
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header name={blogData.name} />
+      You're on your own from here! Follow the deliverables; test things out in
+      the browser as you write your code; and good luck!
       <About />
-      <ArticleList />
-      <aside className="App aside" />
-      <main className="App main" />
+      <Article />
     </div>
   );
 }
